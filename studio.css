@@ -1,0 +1,408 @@
+
+body{
+margin: 0%;
+height: 100%;
+width: 100%;
+padding: 0%;
+overflow-x: hidden;
+font-family: 'Cinzel', serif;
+
+
+/* overflow ka mtlb ke image ke side se extra space aati h to usko remove krna */
+}
+
+.container-fluid{
+    background: url('b\ 07.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+#title{
+    background-color: #ff4c68;
+}
+
+ul{
+    position: relative;
+    left: 40%;
+}
+
+.navbar{
+    padding: 0 0 4.5rem;
+
+}
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 10px 18px;
+    position: relative;
+    right: 25%;
+}
+.nav-link{
+    font-size: 1.3rem;
+}
+.change{
+
+    position: absolute;
+    top: 10rem;
+    left: 14%;
+    width: 60%;
+}
+.change h1{     
+    font-size: 50px;
+    color: white;
+    
+}
+.para{
+    color: red;
+    position: absolute;
+    top: 19rem;
+    left: 15%;
+    width: 50%;
+}
+h1{
+    font-size: 70px;
+}
+
+footer:before{
+    color: white;
+    content: '';
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        content: 'Photographer';
+        width: 100%;
+    }
+    40%{
+        content: 'Freelancer';
+        width: 100%;
+
+    }
+    
+}
+
+.container-fluid2{
+
+    height: 100vh;
+    width: 100%;
+    
+}
+.book-now button{
+  
+  margin: 25px 0px;
+ padding: 9px;
+font-size: 21px;
+text-align: center;
+position: relative;
+left: 48%;
+
+}
+
+
+/* 
+about us section */
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+    /* background-image: url('nature.jpg'); */
+}
+
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section{
+    float: left;
+    width: 55%;
+}
+
+.image-section{
+    float: right;
+    width: 40%;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+    padding: 18px;
+}
+
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.content-section .content h3{
+    margin: 20px 0;
+    color: red;
+    font-size: 21px;
+}
+
+.content-section .content p{
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content-section .social{
+    margin: 40px 0px;
+}
+.content-section .social i{
+color: #a52a2a;
+font-size: 30px;
+padding: 0px 10px;
+}
+
+.content-section .social i:hover{
+color: #3d3d3d;
+}
+
+
+/* 
+service section */
+.service-section .title-section{
+    margin: 0 0 5px 10px;
+    position: relative;
+    left: 10%;
+    font-size: 40px;
+}
+
+.service-section{
+padding: 50px 0 80px;
+}
+.service-section .service-item{
+
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.service-section .service-item-inner{
+    position: relative;
+    overflow: hidden;
+}
+.service-section .service-item-inner img{
+    width: 100%;
+    display: block;
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+.service-section .service-item-inner:hover img{
+
+filter: grayscale(0);
+transform: scale(1.1);
+}
+.service-section .service-item-inner .overlay{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.service-section .service-item-inner:hover .overlay{
+background-color: transparent;    
+
+/* iss image jyda ache se dikhri hai box mein */
+}
+.service-section .service-item-inner .overlay h4{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.service-section .service-item-inner .overlay:hover h4{
+transform: translateX(30px);
+opacity: 0;
+}
+
+
+
+.carousal-head{
+text-align: center;
+padding-top: 30px;
+
+}
+
+.carousal-head h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+   
+
+}
+h4{
+    font-family: 'Cinzel', serif;
+}
+ #testimonials{
+    
+    text-align: center;
+    background-color: rgb(84, 83, 83);
+    color: white;
+    margin: 40px 0 40px 0;
+}
+.testimonial-img{
+    width: 12%;
+    border-radius: 50%;
+    margin: 20px;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+
+@media (max-width: 1000px){
+.book-now{
+    position: relative;
+    right: 40px;
+}
+
+.change h1{
+    font-size: 33PX;
+}
+.para p{
+    font-size: 15px;
+    position: relative;
+    bottom: 25px;
+}
+
+/* 
+about us section */
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+}
+.content-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.image-section{
+    float: none;
+    width: 100%;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.content-section{
+    padding: 20px;
+}
+.content-section .title{
+    text-align: center;
+}
+.title h1{
+    font-size: 32px;
+    position: relative;
+    right: 83px;
+}
+.content p{
+    font-size: 10px;
+}
+}
+.content-section .social{
+    text-align: center;
+}
+
+
+/* 
+carousal-head section */
+
+.carousal-head{
+    font-size: 16px;
+    padding: 0 20px 0 20px;
+}
+
+.carousel-inner .testimonial-img{
+
+   width: 12%;
+}
+
+.title-section h1{
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+    right: 30px;
+}
+
+/* 
+section last */
+
+.links{
+    width: 50%;
+    position: relative;
+    left: 80px;
+    text-align: left;
+}
+.link-h6{
+    font-size: 16px;
+    line-height: 2;
+}
+.link-p{
+    font-size: 11px;
+    color:blueviolet;
+}
+.link-h3{
+    padding-bottom: 20px;
+}
+.i-link{
+    padding-right: 5px;
+}
+
+#footer{
+    padding: 9% 15%;
+    text-align: center;
+    color: black;
+}
+.footer-logo{
+padding: 70px 11px 20px 11px;
+}
+
+
+@media (max-width: 767px){
+
+    .service-section .service-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .carousal-head p{
+        font-size: 14px;
+    }
+
+    .carousel-inner .carousel-item h4{
+        font-size: 18px;
+    }
+
+    .carousel-inner .testimonial-img{
+        width: 23%;
+    }
+}
+
+@media (max-width: 575px){
+
+    .service-section .service-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+    }
+
+}
