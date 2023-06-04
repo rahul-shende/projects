@@ -1,0 +1,176 @@
+body{
+    font-family: "Montserrat";
+}
+p{
+    font-size: 12px;
+    color: gray;
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: white;
+}
+h2{
+    font-weight: bold;
+    line-height: 1.5;
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+/* Buttons */
+
+button{
+    margin: 5% 3% 5% 0;
+}
+
+
+
+#title{
+    background-color: #ff4c68;
+}
+.container-fluid{
+    padding: 3% 15% 7%;
+}
+ul{
+    position: relative;
+    left: 40%;
+}
+
+
+/* Navbar box */
+
+.navbar{
+    padding: 0 0 4.5rem;
+    /* iska matlab hai top and down se 0 and left and right se 0 and bottom se 4.5 */
+
+}
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+    position: relative;
+    right: 25%;
+}
+.nav-link{
+    font-size: 1.2rem;
+}
+
+/* title image */
+
+.dog{
+    width: 20%;
+    transform: rotate(25deg);
+    position: absolute;
+    /* position absolute dene se mtlb ye hai ki niche vle section lo relative krke isko absolute krke ye uske niche aajaega */
+
+}
+
+/* feature section */
+
+#feature{
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+    /* z-index: 1; */
+    /* position relative or z index ko krne se ye mtlb hai ki abtk dog img vla section abtk first th but z index k krne se vo niche ho gya 2 section k ar photo niche se kat gyi */
+
+}
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+.icon{
+    color: #ef8172;
+    margin: 1rem;
+}
+.icon:hover{
+    color: #ff4c68;
+}
+
+/* tstimonial section */
+
+#testimonials{
+    
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+.testimonial-img{
+    width: 12%;
+    border-radius: 50%;
+    margin: 20px;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/* logo section */
+
+#logo{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.logo-img{
+width: 15%;
+margin: 5px 20px 
+ }
+
+/* pricing */
+
+#pricing{
+    text-align: center;
+    padding: 8% 15%;
+}
+.h3-pricing{
+    padding-bottom: 4%;
+}
+
+/* down */
+
+#down{
+    background-color: #ff4c68;
+    color: white;
+    text-align: center;
+
+}
+.container{
+    width: 70%;
+    padding-top: 40px;
+}
+.down-h2{
+
+    font-size: 40px;
+}
+
+/* footer */
+
+#footer{
+    padding: 7% 15%;
+    text-align: center;
+}
+.footer-logo{
+padding: 30px 11px;
+}
+
+/* this is for the responsive website like design like a mobile and tablet */
+@media (max-width: 1000px){
+.dog{
+    position: static;
+    width: 55%;
+    transform: rotate(0)
+}
+#title{
+    text-align:center ;
+}
+}
